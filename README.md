@@ -6,7 +6,8 @@ Data Pipeline Process: Extract, Transform, and Load. Extract from JSON and CSV f
 The purpose of this repository is to perform an ETL from start to finish on data originating from JSON wikipedia and CSV formats. We will extract the data (pull the data from the sources), Transform the data (use regular expressions to parse data and to transform text into numbers, clean the data, eliminate unnecessary columns, merge dataframes, and load the data into PostgreSQL. ETL is the workhorse for moving information between databases to improve performance and comprehension. ETL is a core concept in data engineering in that it helps organizations have consistent data with maintained integrity. The goal is to create a pipeline that automates as much data processing as it can. 
 
 ![data-8-1-1-1-extract-transform-load](https://user-images.githubusercontent.com/73972332/105554938-34d6d180-5cbd-11eb-9882-1c37d69511bb.png = 250x250)
-<img src="https://user-images.githubusercontent.com/73972332/105554938-34d6d180-5cbd-11eb-9882-1c37d69511bb.png g" width="200" height="400" />
+
+<img src="https://user-images.githubusercontent.com/73972332/105554938-34d6d180-5cbd-11eb-9882-1c37d69511bb.png" width="200" height="400" />
 
 
 ### Project Scope
