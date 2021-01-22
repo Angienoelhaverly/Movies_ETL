@@ -13,6 +13,11 @@ Amazing Prime Video is a platform for streaming movies and tv shows. The Amazing
 There are two data sources. A scrape of Wikipedia for all movies released since 1990 and rating data from MovieLand's website. We need to extract the data from the two sources, transform it into one clean dataset, and finally load that dataset into a SQL table. 
 
 ## ETL Implementation
-
+Once we have gathered all the source data, we need to perform the most challenging aspect of the ETL process: the Transform phase. In order to transform the data, we will need to perform three separate steps. 
+* Write an ETL Function to Read Three Data Files
+    * This function is fairly straight forward; we use python and pandas to open and read all three files into three separate dataframes. The two csv files can be read with the pd.read_CSV function in pandas while the JSON file can be opened and read using a "with open ( ) as file" statement and then using the method json.load inside the "with" function.  
+* Extract and Transform the Wikipedia Data
+* Extract and Transform the Kaggle data
+After transforming the data, we will finally create one Movie Database by loading the information into PostgreSQL. 
 ## Results
 
