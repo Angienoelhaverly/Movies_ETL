@@ -41,6 +41,7 @@ After running two queries, we arrive at the following results:
 
 ![movies_query](https://user-images.githubusercontent.com/73972332/105557871-1b845400-5cc2-11eb-8671-1017c3a4bda5.png)
 ![ratings_query](https://user-images.githubusercontent.com/73972332/105557919-3e166d00-5cc2-11eb-9821-d771553b4b3b.png)
+![final_run_time](https://user-images.githubusercontent.com/73972332/105558123-baa94b80-5cc2-11eb-9b01-c51f0e4b4bf8.png)
 
-We can see that both our movies and ratings tables have loaded successfully into our PostgreSQL Database and we now have a full and final dataset in one merged database to use for our Amazing Prime Hackathon!
+We can see that both our movies and ratings tables have loaded successfully into our PostgreSQL Database and the final runtime to load the data was 2944.77 seconds, or 49 minutes. After all that parsing, cleaning, and merging, we now have a full and final dataset in one merged database to use for our Amazing Prime Hackathon!
 
