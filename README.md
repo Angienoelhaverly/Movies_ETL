@@ -12,3 +12,7 @@ Amazing Prime Video is a platform for streaming movies and tv shows. The Amazing
 ### Data Origination
 There are two data sources. A scrape of Wikipedia for all movies released since 1990 and rating data from MovieLand's website. We need to extract the data from the two sources, transform it into one clean dataset, and finally load that dataset into a SQL table. 
 
+## ETL Implementation
+
+## Results
+
