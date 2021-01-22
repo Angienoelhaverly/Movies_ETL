@@ -34,7 +34,7 @@ Once we have gathered all the source data, we need to perform the most challengi
 ### Load
 After transforming the data, we will finally create one Movie Database by loading the information into PostgreSQL. We are now onto the final stage of our ETL Process: the Load Phase. 
 * Here is where we connect Pandas and SQL. Amazing Prime has decided the easiest way to make the data accessible for the hackathon is to provide a SQL database to the participants. We need to move the data from Pandas into a PostgreSQL database.
-    * We're going to create a new database and use the built-in to_sql() method in Pandas to create a table for our merged movie data. We'll also import the raw ratings data into its own table.
+    * We create a new database and use the built-in to_sql() method in Pandas to create a table for our merged movie data. We also import the raw ratings data into its own table.
     * We create the database engine in our python jupyter notebook file, and then run the code to import the movie and ratings data into PostgreSQL while printing out the number of rows that import along with the elapsed time. 
 ## Results
 
