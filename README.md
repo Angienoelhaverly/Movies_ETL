@@ -23,6 +23,12 @@ Once we have gathered all the source data, we need to perform the most challengi
     * We can consolidate columns with the same data into one column. 
     * We can also remove columns with any imdb_id duplicates, drop columns with null values, and use regex to clean by box office data, budget, release date, and running time. 
 * Extract and Transform the Kaggle data
+    * Because the Kaggle data came in as a CSV, one of the first things we want to check is that all of the columns came in as the correct data types.
+    * We use the .value_counts() method to check that all values are either true or false. Since we find they aren't, we remove the bad data by dropping columns that are false. 
+    * We convert the data types for each of the six columns that need to be converted to their proper type. 
+    * We run reasonability checks on the ratings data to make sure dates don't seem outlandish. 
+    * Finally, we look at some statistics of the actual ratings and see if there are any glaring errors. A quick, easy way to do this is to look at a histogram of the rating distributions, and then use the describe() method to print out some stats on central tendency and spread.
+    
 After transforming the data, we will finally create one Movie Database by loading the information into PostgreSQL. 
 ## Results
 
