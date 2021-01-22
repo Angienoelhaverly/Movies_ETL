@@ -13,7 +13,7 @@ Amazing Prime Video is a platform for streaming movies and tv shows. The Amazing
 There are two data sources. A scrape of Wikipedia for all movies released since 1990 and rating data from MovieLand's website. We need to extract the data from the two sources, transform it into one clean dataset, and finally load that dataset into a SQL table. 
 
 ## ETL Implementation
-Once we have gathered all the source data, we need to perform the most challenging aspect of the ETL process: the Transform phase. In order to transform the data, we will need to perform three separate steps. 
+Once we have gathered all the source data, we need to perform the most challenging aspect of the ETL process: the Transform phase. In order to transform the data, we will need to perform four main steps. 
 * Write an ETL Function to Read Three Data Files
     * This function is fairly straight forward; we use python and pandas to open and read all three files into three separate dataframes. The two csv files can be read with the pd.read_CSV function in pandas while the JSON file can be opened and read using a "with open ( ) as file" statement and then using the method json.load inside the "with" function.  
 * Extract and Transform the Wikipedia Data
@@ -28,6 +28,8 @@ Once we have gathered all the source data, we need to perform the most challengi
     * We convert the data types for each of the six columns that need to be converted to their proper type. 
     * We run reasonability checks on the ratings data to make sure dates don't seem outlandish. 
     * Finally, we look at some statistics of the actual ratings and see if there are any glaring errors. A quick, easy way to do this is to look at a histogram of the rating distributions, and then use the describe() method to print out some stats on central tendency and spread.
+* Merge the Wikipedia and Kaggle Data
+    * Now that the Wikipedia data and Kaggle data are cleaned up and in tabular formats with the right data types for each column, we can join them together. However, after they're joined, the data still needs to be cleaned up a bit, especially where Kaggle and Wikipedia data overlap. We remove columns that are redundant. 
     
 After transforming the data, we will finally create one Movie Database by loading the information into PostgreSQL. 
 ## Results
