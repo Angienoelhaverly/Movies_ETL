@@ -50,3 +50,5 @@ After running two queries, we arrive at the below results. We can see that both 
 ![final_run_time](https://user-images.githubusercontent.com/73972332/105558123-baa94b80-5cc2-11eb-9b01-c51f0e4b4bf8.png)
 
 
+
+
