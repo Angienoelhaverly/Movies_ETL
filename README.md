@@ -21,7 +21,7 @@ There are two data sources. A scrape of Wikipedia for all movies released since 
 
 ### Transform
 Once we have gathered all the source data, we need to perform the most challenging aspect of the ETL process: the Transform phase. In order to transform the data, we will need to perform four main steps. 
-* Write an ETL Function to Read Three Data Files: [ETL_function_test.ipynb](/ETL_function_test.ipynb)
+* Write an [ETL Function](/ETL_function_test.ipynb)o Read Three Data Files:
     * This function is fairly straight forward; we use python and pandas to open and read all three files into three separate dataframes. The two csv files can be read with the pd.read_CSV function in pandas while the JSON file can be opened and read using a "with open ( ) as file" statement and then using the method json.load inside the "with" function.  
 * Extract and Transform the Wikipedia Data
     * The process to clean the wikipedia data is more complex and will take quite a few steps. We first want to create a non-destructive copy so that we do not destroy any of our original data. This is just good coding practice. 
