@@ -49,6 +49,7 @@ After running two queries, we arrive at the below results. We can see that both 
 ![ratings_query](https://user-images.githubusercontent.com/73972332/105557919-3e166d00-5cc2-11eb-9821-d771553b4b3b.png)
 ![final_run_time](https://user-images.githubusercontent.com/73972332/105558123-baa94b80-5cc2-11eb-9b01-c51f0e4b4bf8.png)
 
-
+## Summary
+Our dataframe originated from three separate files; two large CSV file and a JSON file scraped from Wikipedia. The data has been parsed, cleaned, and merged to create one main database with two tables, one for movie data and one for ratings data. We extracted really messy and almost unusable data, combed through it carefully to transform it, and then loaded it into a SQL database. Now the hackathon has a reliable, clean dataset ready to be analyzed! 
 
 
